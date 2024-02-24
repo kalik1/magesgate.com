@@ -1,33 +1,31 @@
-name: Build and Deploy to GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
     branches:
-      - main  # Set to your default branch
+      - main  # Adjust this if you want to deploy from a different branch
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
     
     - name: Setup Node
       uses: actions/setup-node@v2
       with:
-        node-version: '14' # Set to your Node version
-
-    - name: Install Dependencies
-      run: npm install
-
-    - name: Build
-      run: npm run build
-
-    - name: Deploy to GitHub Pages
+        node-version: '14'  # Adjust this based on your project's Node version
+    
+    - name: Install and Build
+      run: |
+        npm install
+        npm run build
+    
+    - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v4
       with:
-        branch: gh-pages
-        folder: build
+        branch: gh-pages  # The branch the action should deploy to
+        folder: build  # The folder the action should deploy
         token: ${{ secrets.GITHUB_TOKEN }}  # Using the built-in GitHub Token
         clean: true
         force: true
