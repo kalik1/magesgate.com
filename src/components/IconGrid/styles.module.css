@@ -21,8 +21,8 @@
 
 .iconCell img {
     width: auto; /* Allows the image to scale based on height */
-    max-width: 32px; /* Adjusts the maximum width of icons */
-    height: 32px; /* Adjusts the height of icons */
+    max-width: 64px; /* Adjusts the maximum width of icons */
+    height: 64px; /* Adjusts the height of icons */
     box-shadow: black;
     border: 2px solid black; /* Black border */
     border-radius: 3px; /* Rounded corners */
@@ -43,7 +43,7 @@
 }
 
 /* Media query to hide the icon grid on mobile devices */
-@media (max-width: 540px) {
+@media (max-width: 770px) {
     .iconGrid {
         display: none;
     }
