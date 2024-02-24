@@ -30,6 +30,7 @@ fs.readdir(iconsDir, (err, files) => {
             const filePath = `../../assets/images/icongrid/${file}`;
             return `import ${variableName} from '${filePath}';`;
         }
+        return undefined;
     }).filter(e => !!e);
 
         const exportStatement = `export const icons = [${importStatements.map((filename, index) => filename.split(" ")[1]).join(', ')}];`;

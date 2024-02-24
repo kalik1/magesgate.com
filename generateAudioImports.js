@@ -30,6 +30,7 @@ fs.readdir(iconsDir, (err, files) => {
             const filePath = `../../assets/audio/spells/${file}`;
             return `import ${variableName} from '${filePath}';`;
         }
+        return undefined;
     }).filter(e => !!e);
 
     console.log(importStatements);
