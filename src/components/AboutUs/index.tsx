@@ -48,17 +48,6 @@ const AboutUs = () => {
                 bubble.addEventListener('click', () => setModalContent({ isVisible: true, description: bubbleDescriptions[3 - index] }));
             });
 
-            const handleClose = () => {
-                // Start by setting isVisible to false to initiate any hide animations
-                setModalContent(prev => ({ ...prev, isVisible: false }));
-
-                // Wait 1 second before changing z-index to -1, to ensure any transitions complete
-                setTimeout(() => {
-                    setModalContent(prev => ({ ...prev, shouldHide: true }));
-                }, 1000);
-            };
-
-
             // Cleanup to remove event listeners
             return () => {
                 bubbles.forEach((bubble, index) => {
