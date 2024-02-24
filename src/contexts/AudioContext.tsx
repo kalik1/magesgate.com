@@ -32,6 +32,7 @@ export const AudioProvider: FunctionComponent<AudioProviderProps> = ({ children 
     const [isPlaying, setIsPlaying] = useState(false);
     const [hasBeenInitiated, setHasBeenInitiated] = useState(false);
 
+    audio.loop = true;
     const autoPlay = () => {
         if (!hasBeenInitiated) {
             setHasBeenInitiated(true);
