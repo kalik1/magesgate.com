@@ -7,7 +7,7 @@
     padding: 10px 20px;
     color: #fff;
     font-size: 32px;
-
+    z-index: 10;
     position: relative; /* Ensure positioning context for dropdown */
 }
 

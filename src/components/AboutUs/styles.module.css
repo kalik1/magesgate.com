@@ -24,7 +24,7 @@
     transform: translate(-50%, -50%);
     white-space: nowrap; /* Prevents text from wrapping */
     color: white;
-    font-size: 14px;
+    font-size: 32px;
     animation: fadeOut 5s ease forwards; /* Adjusted animation duration to 1s */
     z-index: 2;
 }
@@ -140,6 +140,6 @@
         margin: 0; /* Removes default margins */
         /* Removes default padding */
         padding: 130px 10% 10%;
-
+        font-size: 20px;
     }
 }

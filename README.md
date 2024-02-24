@@ -1,10 +1,8 @@
 [![Deploy to GitHub Pages](https://github.com/kalik1/magesgate.com/actions/workflows/deploy.yaml/badge.svg)](https://github.com/kalik1/magesgate.com/actions/workflows/deploy.yaml)
 
 # TODO
-- navlink not working on mobile
 - bubbles not moving on startup
 - 404.html redirect not working 
-- reduce modal font size on mobile
   
 # Getting Started with Create React App
 
