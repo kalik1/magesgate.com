@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.74f57e3a.css",
-    "main.js": "/static/js/main.7e41f33d.js",
+    "main.js": "/static/js/main.f5ea24eb.js",
     "static/js/453.5651143b.chunk.js": "/static/js/453.5651143b.chunk.js",
     "static/media/pirate-tavern-117281.mp3": "/static/media/pirate-tavern-117281.cef61d8019368fca0328.mp3",
     "static/media/modal4.png": "/static/media/modal4.065348dfc65a1754f5dc.png",
@@ -74,11 +74,11 @@
     "static/media/audio_60.mp3": "/static/media/audio_60.81f6c5592dc75bb51629.mp3",
     "index.html": "/index.html",
     "main.74f57e3a.css.map": "/static/css/main.74f57e3a.css.map",
-    "main.7e41f33d.js.map": "/static/js/main.7e41f33d.js.map",
+    "main.f5ea24eb.js.map": "/static/js/main.f5ea24eb.js.map",
     "453.5651143b.chunk.js.map": "/static/js/453.5651143b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.74f57e3a.css",
-    "static/js/main.7e41f33d.js"
+    "static/js/main.f5ea24eb.js"
   ]
 }
