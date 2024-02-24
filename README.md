@@ -4,7 +4,8 @@
 - navlink not working on mobile
 - bubbles not moving on startup
 - 404.html redirect not working 
-
+- reduce modal font size on mobile
+  
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
