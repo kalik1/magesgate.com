@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/magesgate.com/static/css/main.a7aef496.css",
+    "main.css": "/magesgate.com/static/css/main.d77791f9.css",
     "main.js": "/magesgate.com/static/js/main.5eb2f0cb.js",
     "static/js/453.5651143b.chunk.js": "/magesgate.com/static/js/453.5651143b.chunk.js",
     "static/media/modal4.png": "/magesgate.com/static/media/modal4.065348dfc65a1754f5dc.png",
@@ -72,12 +72,12 @@
     "static/media/audio_62.mp3": "/magesgate.com/static/media/audio_62.b173b6c49d3e2dddf140.mp3",
     "static/media/audio_60.mp3": "/magesgate.com/static/media/audio_60.81f6c5592dc75bb51629.mp3",
     "index.html": "/magesgate.com/index.html",
-    "main.a7aef496.css.map": "/magesgate.com/static/css/main.a7aef496.css.map",
+    "main.d77791f9.css.map": "/magesgate.com/static/css/main.d77791f9.css.map",
     "main.5eb2f0cb.js.map": "/magesgate.com/static/js/main.5eb2f0cb.js.map",
     "453.5651143b.chunk.js.map": "/magesgate.com/static/js/453.5651143b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a7aef496.css",
+    "static/css/main.d77791f9.css",
     "static/js/main.5eb2f0cb.js"
   ]
 }
