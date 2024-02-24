@@ -6,9 +6,14 @@ import './assets/styles/global.css';
 import Navbar from "./components/NavBar";
 import IconGrid from "./components/IconGrid";
 import AboutUs from "./components/AboutUs";
+import {AudioProvider} from "./contexts/AudioContext";
+import {AudioHandler} from "./contexts/AudioHandler";
 
 const App: React.FC = () => {
   return (
+      <AudioProvider>
+          <AudioHandler /> {/* This component now safely uses useAudio */}
+
       <Router>
         <div className="App">
           <Navbar />
@@ -23,6 +28,7 @@ const App: React.FC = () => {
 
         </div>
       </Router>
+        </AudioProvider>
   );
 }
 

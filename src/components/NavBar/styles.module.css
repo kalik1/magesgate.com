@@ -11,6 +11,24 @@
     position: relative; /* Ensure positioning context for dropdown */
 }
 
+.audioControl {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.audioControl .icon {
+    display: inline; /* Show icon by default */
+}
+
+.audioControl .text {
+    font-size: 24px;
+
+    display: none; /* Hide text by default */
+}
+
 .logo a {
     color: #38a3d3;
     text-decoration: none;
@@ -55,6 +73,16 @@
     .hamburger {
         display: block;
     }
+
+    .audioControl .icon {
+        display: none; /* Hide icon on mobile */
+    }
+    .audioControl .text {
+        font-size: 30px;
+
+        display: inline; /* Show text on mobile */
+    }
+
     body {
         overflow-x: hidden; /* Prevents horizontal overflow */
     }

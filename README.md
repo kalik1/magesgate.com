@@ -2,7 +2,6 @@
 
 # TODO
 - bubbles not moving on startup
-- 404.html redirect not working 
   
 # Getting Started with Create React App
 
