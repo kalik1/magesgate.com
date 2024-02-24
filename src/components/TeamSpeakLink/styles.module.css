@@ -1,0 +1,47 @@
+/* src/components/TeamSpeakLink/styles.module.css */
+.container {
+    background-image: url('../../assets/images/modal2.png'); /* New background image */
+    background-size: 100% 100%; /* Stretch image to fill the container */
+    background-position: center;
+    border: none;
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 600px;
+    color: #fff;
+    height: 40vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Push content to the bottom */
+    align-items: center; /* Center content horizontally */
+    gap: 10px; /* Optional: Adds space between flex items */
+}
+
+.container h2,
+.container p {
+    margin: 0; /* Removes default margins */
+    padding: 0px 0; /* Adds a little padding for spacing, adjust as needed */
+}
+
+.joinButton {
+    background-color: #0d88bd;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px; /* Adjust or remove if you want less space above the button */
+    display: inline-block;
+    font-weight: bold;
+}
+
+.joinButton:hover {
+    background-color: #095373; /* Darker green on hover */
+}
+
+@media (max-width: 540px) {
+    .container {
+        height: 60vh; /* Adjusted height */
+    }
+}

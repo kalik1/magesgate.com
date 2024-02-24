@@ -1,0 +1,94 @@
+/* src/components/Navbar/styles.module.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    color: #fff;
+    position: relative; /* Ensure positioning context for dropdown */
+}
+
+.logo a {
+    color: #38a3d3;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navLinks {
+    list-style: none;
+    display: flex; /* Keep it horizontal by default */
+    margin: 0;
+    padding: 0;
+    transition: transform 0.3s ease; /* For smoothness */
+}
+
+.navLinks li {
+    padding: 0 20px;
+}
+
+.navLinks li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navLinks li a:hover {
+    color: #38a3d3;
+}
+
+.hamburger {
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    body {
+        overflow-x: hidden; /* Prevents horizontal overflow */
+    }
+
+    .navbar {
+        /* Ensures the navbar background expands to cover the open menu */
+        position: relative; /* Adjust if needed based on your layout */
+        overflow: visible;
+
+    }
+
+    .navLinks {
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%; /* Adjust based on the actual height of your navbar */
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.75);
+        overflow: hidden;
+        max-height: 0; /* Start collapsed */
+        visibility: hidden; /* Initially hidden */
+        transition: max-height 0.5s ease-in-out, visibility 0s linear 0.5s; /* Apply delay only when hiding */
+    }
+
+    .navLinks.show {
+        max-height: 500px; /* Adjust based on content size */
+        visibility: visible; /* Make visible */
+        transition-delay: 0s; /* No delay when showing */
+    }
+
+    .navLinks li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navLinks li a {
+        padding: 10px; /* Larger touch targets */
+        display: block;
+    }
+}

@@ -1,0 +1,16 @@
+/* src/components/Home/styles.module.css */
+.home {
+    padding: 20px;
+    text-align: center; /* Center the text within the home component */
+    background-color: #f0f0f0; /* Light background color for better readability */
+}
+
+.home h1 {
+    color: #333; /* Dark color for the main heading for contrast */
+}
+
+.home p {
+    color: #666; /* Slightly lighter color for the paragraph for readability */
+    max-width: 600px; /* Max width for text readability */
+    margin: 20px auto; /* Center the paragraph and provide spacing */
+}

@@ -1,0 +1,27 @@
+/* src/assets/styles/global.css */
+/* src/assets/styles/global.css */
+@font-face {
+    font-family: 'Immortal';
+    src: url('../fonts/IMMORTAL.ttf') format('truetype');
+}
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.App {
+    background-image: url('../images/bg2.jpg'); /* Adjust path as needed */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    color: white;
+}
+
+* {
+    font-family: 'Immortal', sans-serif;
+}
