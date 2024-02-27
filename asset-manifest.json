@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.74f57e3a.css",
-    "main.js": "/static/js/main.cb3add9c.js",
+    "main.css": "/static/css/main.f818b806.css",
+    "main.js": "/static/js/main.19829ca1.js",
     "static/js/453.5651143b.chunk.js": "/static/js/453.5651143b.chunk.js",
     "static/media/pirate-tavern-117281.mp3": "/static/media/pirate-tavern-117281.cef61d8019368fca0328.mp3",
     "static/media/modal4.png": "/static/media/modal4.065348dfc65a1754f5dc.png",
@@ -73,12 +73,12 @@
     "static/media/audio_62.mp3": "/static/media/audio_62.b173b6c49d3e2dddf140.mp3",
     "static/media/audio_60.mp3": "/static/media/audio_60.81f6c5592dc75bb51629.mp3",
     "index.html": "/index.html",
-    "main.74f57e3a.css.map": "/static/css/main.74f57e3a.css.map",
-    "main.cb3add9c.js.map": "/static/js/main.cb3add9c.js.map",
+    "main.f818b806.css.map": "/static/css/main.f818b806.css.map",
+    "main.19829ca1.js.map": "/static/js/main.19829ca1.js.map",
     "453.5651143b.chunk.js.map": "/static/js/453.5651143b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.74f57e3a.css",
-    "static/js/main.cb3add9c.js"
+    "static/css/main.f818b806.css",
+    "static/js/main.19829ca1.js"
   ]
 }
