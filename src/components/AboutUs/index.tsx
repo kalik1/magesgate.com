@@ -18,16 +18,16 @@ const bubbleDescriptions = [
 
 const AboutUs = () => {
     const [modalContent, setModalContent] = useState({ isVisible: false, description: '' });
-    const containerRef = useRef<HTMLDivElement>(null); // Specify the type for the ref
+    const containerRef = useRef<HTMLDivElement | null>(null); // Specify the type for the ref
     const mages_images = [mage1, mage2, mage3, mage4];
 
     useEffect(() => {
+
         // Ensure containerRef.current is not null before proceeding
         if (containerRef.current) {
             const container = containerRef.current;
             const moveBubbles = () => {
                 const bubbles = container.querySelectorAll(`.${styles.bubble}`);
-
                 bubbles.forEach(bubble => {
                     // Initial random positions within container boundaries
                     const x = Math.random() * (container.offsetWidth - bubble.clientWidth);
