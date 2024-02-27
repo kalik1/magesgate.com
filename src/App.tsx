@@ -6,6 +6,7 @@ import './assets/styles/global.css';
 import Navbar from "./components/NavBar";
 import IconGrid from "./components/IconGrid";
 import AboutUs from "./components/AboutUs";
+import HomePage from "./components/HomePage";
 import {AudioProvider} from "./contexts/AudioContext";
 import {AudioHandler} from "./contexts/AudioHandler";
 
@@ -21,7 +22,7 @@ const App: React.FC = () => {
             {/*<Route path="/" exact component={HomePage} />*/}
               <Route path="/about-us" component={AboutUs} />
               <Route path="/teamspeak" component={TeamSpeakLink} />
-              <Route path="/" component={AboutUs} />
+              <Route path="/" component={HomePage} />
 
           </Switch>
             <IconGrid /> {/* Include IconGrid here */}

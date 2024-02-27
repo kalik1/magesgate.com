@@ -26,6 +26,7 @@ const Navbar: React.FC = () => {
                 &#9776;
             </button>
             <ul className={`${styles.navLinks} ${isNavExpanded ? styles.show : ""}`}>
+                <li><Link to="/" onClick={handleNavLinkClick}>Home</Link></li>
                 <li><Link to="/about-us" onClick={handleNavLinkClick}>About Us</Link></li>
                 <li><Link to="/teamspeak" onClick={handleNavLinkClick}>TeamSpeak</Link></li>
                 <li>

@@ -47,6 +47,10 @@
 
 .navLinks li {
     padding: 0 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navLinks li a {
