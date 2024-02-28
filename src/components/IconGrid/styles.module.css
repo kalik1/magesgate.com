@@ -17,6 +17,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
 }
 
 .iconCell img {
@@ -27,19 +30,27 @@
     border: 2px solid black; /* Black border */
     border-radius: 9px; /* Rounded corners */
     transition: transform 0.1s ease, box-shadow 0.1s ease; /* Faster animation */
-
+    display: block;
     /*box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5); !* Adjusted to cast a shadow *!*/
     cursor: pointer; /* Indicates the icon is clickable */
 }
 
 .iconCell img.clicked {
-    transition: transform 0.1s ease, box-shadow 0.1s ease; /* Faster animation */
-    transform: scale(0.9) ; /* Simulates the button being pressed down */
-    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5); /* Adjusted for clicked state */
+    transition: transform 0.3s ease, box-shadow 0.1s ease; /* Faster animation */
+    /* transform: scale(3) ; Simulates the button being pressed down */
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5); /* Adjusted for clicked state */
+    opacity: 1;
+    scale: 0.95;
 }
 
-.iconCell img:hover {
-    /*transform: scale(1.1); !* Optional: zoom effect on hover *!*/
+.iconCell img:hover:not(.clicked) {
+    /* transform: scale(1.2); */
+    opacity: 0.85;
+}
+
+.iconCell:has(img.clicked) {
+    background-color: rgb(0, 0, 0, 0);
+    scale: 0.95;
 }
 
 /* Media query to hide the icon grid on mobile devices */
