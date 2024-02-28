@@ -40,7 +40,7 @@ const AboutUs = () => {
 
             // Call the function to position bubbles
             moveBubbles();
-            setInterval(() => moveBubbles(), 6000);
+            setInterval(() => moveBubbles(), 6800);
 
             // Adding event listeners to bubbles for opening the modal
             const bubbles = container.querySelectorAll(`.${styles.bubble}`);
